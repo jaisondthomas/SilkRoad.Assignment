@@ -42,7 +42,7 @@ namespace StringFilterUnitTest
         public void EmptyInputStrings()
         {
             var strings = new List<string>();
-            var result = StringFilter.SixLetterStringsStartWithSmallLetter(strings);
+            var result = StringFilter.SixLetterStringsStartWithSmallLetterStrings(strings);
         }
 
         [TestMethod]
@@ -51,7 +51,7 @@ namespace StringFilterUnitTest
         public void OnlySixLetterStrings()
         {
             var strings = SampleStringsStub.OnlySixLetterStrings();
-            var result = StringFilter.SixLetterStringsStartWithSmallLetter(strings);
+            var result = StringFilter.SixLetterStringsStartWithSmallLetterStrings(strings);
         }
 
         [TestMethod]
@@ -60,17 +60,17 @@ namespace StringFilterUnitTest
         public void OnlySmallLetterStrings()
         {
             var strings = SampleStringsStub.OnlySmallLetterStrings();
-            var result = StringFilter.SixLetterStringsStartWithSmallLetter(strings);
+            var result = StringFilter.SixLetterStringsStartWithSmallLetterStrings(strings);
         }
 
 
         [TestMethod]
-        public void SixLetterStringsStartWithSmallLetter()
+        public void SixLetterStringsStartWithSmallLetterStrings()
         {
             var strings = SampleStringsStub.Strings();
 
             var result =
-                StringFilter.SixLetterStringsStartWithSmallLetter(strings);
+                StringFilter.SixLetterStringsStartWithSmallLetterStrings(strings);
 
             Assert.AreEqual("albums", result.ElementAt(0));
             Assert.AreEqual("barely", result.ElementAt(1));
@@ -92,6 +92,24 @@ namespace StringFilterUnitTest
             Assert.IsTrue(result.Count == 2);
             Assert.AreEqual("albums", result.ElementAt(0));
             Assert.AreEqual("barely", result.ElementAt(1));
+        }
+
+        [TestMethod]
+        public void RemoveStringsLargerThanSixLetters()
+        {
+            var strings = SampleStringsStub.LargerThanSixLetterStrings();
+
+            var result = StringFilter.SixLetterStrings(strings);
+
+            Assert.IsTrue(result.Count == 8);
+            Assert.AreEqual("albums", result.ElementAt(0));
+            Assert.AreEqual("barely", result.ElementAt(1));
+            Assert.AreEqual("befoul", result.ElementAt(2));
+            Assert.AreEqual("convex", result.ElementAt(3));
+            Assert.AreEqual("hereby", result.ElementAt(4));
+            Assert.AreEqual("jigsaw", result.ElementAt(5));
+            Assert.AreEqual("tailor", result.ElementAt(6));
+            Assert.AreEqual("weaver", result.ElementAt(7));
         }
 
         [TestMethod]

@@ -91,5 +91,22 @@ namespace StringConsole.Test
 
             };
         }
+
+        public static IEnumerable<string> LargerThanSixLetterStrings()
+        {
+            return new List<string>
+            {
+
+                "albums",
+                "barely",
+                "befoul",
+                "convex",
+                "hereby",
+                "jigsaw",
+                "tailor",
+                "weaver",
+                "albumssssss",
+            };
+        }
     }
 }

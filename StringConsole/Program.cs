@@ -40,7 +40,7 @@ namespace StringConsole
                 "weaver"
             };
             foreach (var sixLetterString in StringFilter
-                .SixLetterStringsStartWithSmallLetter(strings))
+                .SixLetterStringsStartWithSmallLetterStrings(strings))
             {
                 Console.WriteLine(sixLetterString);
             }

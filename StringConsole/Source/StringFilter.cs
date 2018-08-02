@@ -15,12 +15,13 @@ namespace StringConsole.Source
         //2) Could return six letter strings which end with small letter strings.
         //3) As the String filter class grows, some of the private and some of the public 
         //methods in it could be refactored or moved to another class.
+        //4) Handle unknown or general exceptions.
 
         //What is good about this solutions.
         //Functional thinking allowed me to focus more on what needs to be done
         //rather than how it to be done. 
 
-        public static List<string> SixLetterStringsStartWithSmallLetter(
+        public static List<string> SixLetterStringsStartWithSmallLetterStrings(
             List<string> strings)
         {
             if (EmptyInputStrings(strings))
