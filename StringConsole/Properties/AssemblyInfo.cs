@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SilkRoad.Assignment")]
+[assembly: AssemblyTitle("StringConsole")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SilkRoad.Assignment")]
+[assembly: AssemblyProduct("StringConsole")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b2bd0a60-3e9c-459d-be53-3a07a1ea6f6c")]
+[assembly: Guid("c95c18a8-4196-46f2-8a2e-ed19407e6bf0")]
 
 // Version information for an assembly consists of the following four values:
 //

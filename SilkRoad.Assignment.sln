@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilkRoad.Assignment", "SilkRoad.Assignment\SilkRoad.Assignment.csproj", "{B2BD0A60-3E9C-459D-BE53-3A07A1EA6F6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringFilterUnitTest", "StringFilterUnitTest\StringFilterUnitTest.csproj", "{5FC21CC2-A168-41BE-89AA-7665BB040C13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringConsole", "StringConsole\StringConsole.csproj", "{C95C18A8-4196-46F2-8A2E-ED19407E6BF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B2BD0A60-3E9C-459D-BE53-3A07A1EA6F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2BD0A60-3E9C-459D-BE53-3A07A1EA6F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2BD0A60-3E9C-459D-BE53-3A07A1EA6F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2BD0A60-3E9C-459D-BE53-3A07A1EA6F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC21CC2-A168-41BE-89AA-7665BB040C13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC21CC2-A168-41BE-89AA-7665BB040C13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC21CC2-A168-41BE-89AA-7665BB040C13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC21CC2-A168-41BE-89AA-7665BB040C13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C95C18A8-4196-46F2-8A2E-ED19407E6BF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C95C18A8-4196-46F2-8A2E-ED19407E6BF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C95C18A8-4196-46F2-8A2E-ED19407E6BF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C95C18A8-4196-46F2-8A2E-ED19407E6BF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
