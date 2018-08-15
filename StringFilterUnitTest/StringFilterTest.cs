@@ -63,6 +63,24 @@ namespace StringFilterUnitTest
             var result = StringFilter.SixLetterStringsStartWithSmallLetterStrings(strings);
         }
 
+        [TestMethod]
+        public void LargeInputStrings()
+        {
+            var strings = SampleStringsStub.LargeInputStrings();
+
+            var result =
+                StringFilter.SixLetterStringsStartWithSmallLetterStrings(strings);
+
+            Assert.AreEqual("albums", result.ElementAt(0));
+            Assert.AreEqual("barely", result.ElementAt(1));
+            Assert.AreEqual("befoul", result.ElementAt(2));
+            Assert.AreEqual("convex", result.ElementAt(3));
+            Assert.AreEqual("hereby", result.ElementAt(4));
+            Assert.AreEqual("jigsaw", result.ElementAt(5));
+            Assert.AreEqual("tailor", result.ElementAt(6));
+            Assert.AreEqual("weaver", result.ElementAt(7));
+        }
+
 
         [TestMethod]
         public void SixLetterStringsStartWithSmallLetterStrings()
