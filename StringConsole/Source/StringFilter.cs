@@ -6,10 +6,10 @@ namespace StringConsole.Source
 {
     public static class StringFilter
     {
-
         //Summary
         //Return six letter strings which start with small letter strings.
-        //Performance note : According to the test execution time is not bad for large input strings.
+        //Performance note : According to the test execution time is not 
+        //bad for large input strings.
         public static List<string> SixLetterStringsStartWithSmallLetterStrings(
             List<string> strings)
         {
@@ -25,13 +25,15 @@ namespace StringConsole.Source
             if (OnlySixLetterStrings(sixLetterStrings, smallLetterStrings))
             {
                 throw new Exception(
-                    "Only six letter strings available in the input. Needs to have at least one small string which is not six letters.");
+                    @"Only six letter strings available in the input.
+                    Needs to have at least one small string which is not six letters.");
             }
 
             if (OnlySmallLetterStrings(smallLetterStrings, sixLetterStrings))
             {
                 throw new Exception(
-                    "Only small letters strings available in the input. Needs to have at least one six-letter strings.");
+                    @"Only small letters strings available in the input.
+                    Needs to have at least one six-letter strings.");
             }
 
             return (from sixLetterString in sixLetterStrings
