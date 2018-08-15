@@ -9,8 +9,7 @@ namespace StringConsole.Source
 
         //Summary
         //Return six letter strings which start with small letter strings.
-        //According to the test cases large input strings takes less time than 
-        //the small input string
+        //Performance note : According to the test execution time is not bad for large input strings.
         public static List<string> SixLetterStringsStartWithSmallLetterStrings(
             List<string> strings)
         {
