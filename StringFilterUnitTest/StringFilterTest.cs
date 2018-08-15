@@ -64,7 +64,7 @@ namespace StringFilterUnitTest
         }
 
         [TestMethod]
-        public void LargeInputStrings()
+        public void NotTooMuchTimeForLargeInputStrings()
         {
             var strings = SampleStringsStub.LargeInputStrings();
 
