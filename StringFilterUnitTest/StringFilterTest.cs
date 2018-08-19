@@ -38,7 +38,7 @@ namespace StringFilterUnitTest
         [TestMethod]
         [ExpectedException(typeof(Exception),
             "Input strings should not be empty. Please provide an input.")]
-        public void EmptyInputStrings()
+        public void NotAllowEmptyInputStrings()
         {
             var strings = new List<string>();
             var result = StringFilter.SixLetterStringsStartWithSmallLetterStrings(strings);
@@ -47,7 +47,7 @@ namespace StringFilterUnitTest
         [TestMethod]
         [ExpectedException(typeof(Exception),
             "Only six letter strings available in the input. Needs to have at least one small string which is not six letters.")]
-        public void OnlySixLetterStrings()
+        public void NotAllowOnlySixLetterStrings()
         {
             var strings = SampleStringsStub.OnlySixLetterStrings();
             var result = StringFilter.SixLetterStringsStartWithSmallLetterStrings(strings);
@@ -56,7 +56,7 @@ namespace StringFilterUnitTest
         [TestMethod]
         [ExpectedException(typeof(Exception),
             "Only small letters strings available in the input. Needs to have at least one six-letter strings.")]
-        public void OnlySmallLetterStrings()
+        public void NotAllowOnlySmallLetterStrings()
         {
             var strings = SampleStringsStub.OnlySmallLetterStrings();
             var result = StringFilter.SixLetterStringsStartWithSmallLetterStrings(strings);
@@ -64,7 +64,7 @@ namespace StringFilterUnitTest
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException),
             "Please enter a valid input string")]
-        public void NullInputNotAllowed()
+        public void NotAllowNullInput()
         {
           var result = StringFilter.SixLetterStringsStartWithSmallLetterStrings(null);
         }
