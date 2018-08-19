@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using StringConsole;
 using StringConsole.Source;
 using StringConsole.Test;
 
@@ -61,6 +60,13 @@ namespace StringFilterUnitTest
         {
             var strings = SampleStringsStub.OnlySmallLetterStrings();
             var result = StringFilter.SixLetterStringsStartWithSmallLetterStrings(strings);
+        }
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException),
+            "Please enter a valid input string")]
+        public void NullInputNotAllowed()
+        {
+          var result = StringFilter.SixLetterStringsStartWithSmallLetterStrings(null);
         }
 
         [TestMethod]
